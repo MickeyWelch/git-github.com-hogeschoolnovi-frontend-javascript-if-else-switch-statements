@@ -8,27 +8,31 @@ console.log('Is 2 gelijk aan 2?', equalNumbers);
 // ==========================================
 // 1. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 groter dan 20?" in op        // geeft false wanneer gelogd
 // ==========================================
-const isTenBiggerThenTwenty = 10 => 20;
+const isTenBiggerThenTwenty = 10 >= 20;
 console.log(isTenBiggerThenTwenty);
 
 // ==========================================
 // 2. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 ongelijk aan 11?" in op        // geeft true wanneer gelogd
 // ==========================================
 let tenIsNotEleven = 10 !== 11;
+console.log(tenIsNotEleven);
 
 // ==========================================
 // 3. Declareer een variabele en sla daar in op of de woorden 'zoet' en 'sappig' hetzelfde zijn                // geeft false wanneer gelogd
 // ==========================================
 let sweetIsNotJuicy= "zoet" === "sappig";
+console.log(sweetIsNotJuicy);
 
 // ==========================================
 // 4a. Declareer een variabele en sla daar het rapportcijfer 9 in op.
 // 4b. schrijf een script dat checkt of het rapportcijfer groter is dan 8.
 //     Als dat zo is, loggen we 'Cum laude!' in de console.                                                     // geeft 'Cum laude!' wanneer gelogd
 // ==========================================
-rapportCijfer = 9;
-if(rapportCijfer => 8;) {
+grade = 9;
+if (grade >= 8) {
   console.log('Cum laude!');
+} else {
+    console.log('Jouw cijfer is:' + grade);
 }
 
 // ==========================================
@@ -39,9 +43,9 @@ if(rapportCijfer => 8;) {
 // ==========================================
 
 const isRaining = false;
-const temperature = 23;
+const temperature = 21;
 
-if (!isRaining && temperature => 21) {
+if (!isRaining && temperature >= 21) {
      console.log("Je kunt een korte broek aan!");
 }
 else {
